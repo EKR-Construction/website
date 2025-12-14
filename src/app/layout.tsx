@@ -35,21 +35,15 @@ export const metadata: Metadata = {
     title: 'EKR Construction | Professional Construction Services',
     description:
       'Professional construction services for residential and commercial projects.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'EKR Construction',
-      },
-    ],
+    // TODO: Add social sharing image (1200x630px) at /public/og-image.jpg
+    // See Issue #17 for image optimization
   },
   twitter: {
     card: 'summary_large_image',
     title: 'EKR Construction | Professional Construction Services',
     description:
       'Professional construction services for residential and commercial projects.',
-    images: ['/og-image.jpg'],
+    // TODO: Add social sharing image - same as Open Graph image above
   },
   robots: {
     index: true,

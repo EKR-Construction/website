@@ -1,23 +1,113 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  /* Brand Color Scales - Tailwind v4 CSS-first configuration */
+  --color-cornflower-blue-50: #e8f4fc;
+  --color-cornflower-blue-100: #d1e9f9;
+  --color-cornflower-blue-200: #a3d3f3;
+  --color-cornflower-blue-300: #75bded;
+  --color-cornflower-blue-400: #47a7e7;
+  --color-cornflower-blue-500: #165cc5;
+  --color-cornflower-blue-600: #124a9e;
+  --color-cornflower-blue-700: #0d3777;
+  --color-cornflower-blue-800: #09254f;
+  --color-cornflower-blue-900: #041228;
+  --color-cornflower-blue-950: #030d1c;
+
+  --color-eggshell-50: #fefefe;
+  --color-eggshell-100: #fcfbf8;
+  --color-eggshell-200: #f9f7ef;
+  --color-eggshell-300: #f6f3e7;
+  --color-eggshell-400: #f5f1e3;
+  --color-eggshell-500: #f3efe0;
+  --color-eggshell-600: #c2bfb3;
+  --color-eggshell-700: #918f86;
+  --color-eggshell-800: #615f5a;
+  --color-eggshell-900: #30302d;
+  --color-eggshell-950: #1e1e1c;
+
+  --color-dusty-grape-50: #ededf1;
+  --color-dusty-grape-100: #dbdce3;
+  --color-dusty-grape-200: #b7b9c7;
+  --color-dusty-grape-300: #9396ab;
+  --color-dusty-grape-400: #6d6f8f;
+  --color-dusty-grape-500: #474973;
+  --color-dusty-grape-600: #393b5c;
+  --color-dusty-grape-700: #2b2c45;
+  --color-dusty-grape-800: #1c1d2e;
+  --color-dusty-grape-900: #0e0f17;
+  --color-dusty-grape-950: #09090e;
+
+  --color-tomato-jam-50: #fcecec;
+  --color-tomato-jam-100: #f9d9d8;
+  --color-tomato-jam-200: #f3b3b1;
+  --color-tomato-jam-300: #ec8c8a;
+  --color-tomato-jam-400: #e15f5d;
+  --color-tomato-jam-500: #d63230;
+  --color-tomato-jam-600: #ab2826;
+  --color-tomato-jam-700: #801e1d;
+  --color-tomato-jam-800: #561413;
+  --color-tomato-jam-900: #2b0a0a;
+  --color-tomato-jam-950: #1c0707;
+
+  --color-carbon-black-50: #f5f5f5;
+  --color-carbon-black-100: #ebebea;
+  --color-carbon-black-200: #d7d6d5;
+  --color-carbon-black-300: #c2c2c0;
+  --color-carbon-black-400: #74736f;
+  --color-carbon-black-500: #252422;
+  --color-carbon-black-600: #1e1d1b;
+  --color-carbon-black-700: #161615;
+  --color-carbon-black-800: #0f0e0e;
+  --color-carbon-black-900: #070707;
+  --color-carbon-black-950: #040404;
+
+  /* Typography Scale */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+
+  /* Line Heights */
+  --line-height-xs: 1rem;
+  --line-height-sm: 1.25rem;
+  --line-height-base: 1.5rem;
+  --line-height-lg: 1.75rem;
+  --line-height-xl: 1.75rem;
+  --line-height-2xl: 2rem;
+  --line-height-3xl: 2.25rem;
+  --line-height-4xl: 2.5rem;
+  --line-height-5xl: 1;
+  --line-height-6xl: 1;
+
+  /* Font Family */
+  --font-family-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
 
 :root {
-  /* Brand Colors - Base (500 level) */
-  --color-cornflower-blue: #165cc5;
-  --color-eggshell: #f3efe0;
-  --color-dusty-grape: #474973;
-  --color-tomato-jam: #d63230;
-  --color-carbon-black: #252422;
+  /* Semantic Color Aliases */
+  --color-primary: var(--color-cornflower-blue-500);
+  --color-secondary: var(--color-dusty-grape-500);
+  --color-accent: var(--color-tomato-jam-500);
+  --color-background: var(--color-eggshell-500);
+  --color-text: var(--color-carbon-black-500);
 
-  /* Semantic Colors */
-  --color-primary: var(--color-cornflower-blue);
-  --color-secondary: var(--color-dusty-grape);
-  --color-accent: var(--color-tomato-jam);
-  --color-background: var(--color-eggshell);
-  --color-text: var(--color-carbon-black);
-
-  /* Foreground and Background (for compatibility) */
+  /* Legacy Compatibility */
   --foreground: var(--color-text);
   --background: var(--color-background);
 }

@@ -35,7 +35,7 @@ export default function Header() {
             <h1 className="text-xl font-bold text-eggshell-500">
               EKR<span className="hidden sm:inline"> CONSTRUCTION</span>
             </h1>
-            <p className="text-xs font-semibold text-cornflower-blue-500">
+            <p className="text-sm font-semibold text-cornflower-blue-400">
               STRIKE HOLD
             </p>
           </div>

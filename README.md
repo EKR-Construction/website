@@ -13,14 +13,17 @@ A modern, accessible static website built with Next.js 16, TypeScript, and Tailw
 ## Getting Started
 
 1. **Install dependencies:**
+
    ```bash
    pnpm install
    ```
 
 2. **Run development server:**
+
    ```bash
    pnpm dev
    ```
+
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 3. **Build for production:**

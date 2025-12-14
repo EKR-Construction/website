@@ -1,0 +1,77 @@
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer
+      className="border-t border-carbon-black-200 bg-dusty-grape-500"
+      role="contentinfo"
+    >
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <div className="grid gap-8 md:grid-cols-3">
+          {/* Company Info */}
+          <div>
+            <h2 className="mb-4 text-lg font-semibold text-eggshell-50">
+              EKR Construction
+            </h2>
+            <p className="text-sm text-eggshell-100">
+              Professional construction services for residential and commercial
+              projects.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h2 className="mb-4 text-lg font-semibold text-eggshell-50">
+              Quick Links
+            </h2>
+            <nav aria-label="Footer navigation">
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a
+                    href="#services"
+                    className="text-eggshell-100 hover:text-eggshell-50"
+                  >
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    className="text-eggshell-100 hover:text-eggshell-50"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    className="text-eggshell-100 hover:text-eggshell-50"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h2 className="mb-4 text-lg font-semibold text-eggshell-50">
+              Contact
+            </h2>
+            <address className="not-italic text-sm text-eggshell-100">
+              <p>Email: info@ekrconstruction.com</p>
+              <p>Phone: (555) 123-4567</p>
+            </address>
+          </div>
+        </div>
+
+        <div className="mt-8 border-t border-dusty-grape-400 pt-8 text-center">
+          <p className="text-sm text-eggshell-100">
+            &copy; {currentYear} EKR Construction. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

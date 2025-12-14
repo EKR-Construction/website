@@ -2,6 +2,33 @@
 
 A modern, accessible static website built with Next.js 16, TypeScript, and Tailwind CSS.
 
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript (strict mode)
+- **Styling:** Tailwind CSS v4
+- **Package Manager:** pnpm
+- **Deployment:** Vercel (static export)
+
+## Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
+
+2. **Run development server:**
+   ```bash
+   pnpm dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+3. **Build for production:**
+   ```bash
+   pnpm build
+   ```
+   Static files will be generated in the `out/` directory.
+
 ## Project Structure
 
 ```

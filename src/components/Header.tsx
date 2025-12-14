@@ -33,7 +33,7 @@ export default function Header() {
           </div>
           <div className="flex flex-col">
             <h1 className="text-xl font-bold text-eggshell-500">
-              EKR CONSTRUCTION
+              EKR<span className="hidden sm:inline"> CONSTRUCTION</span>
             </h1>
             <p className="text-xs font-semibold text-cornflower-blue-500">
               STRIKE HOLD

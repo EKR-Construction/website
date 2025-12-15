@@ -326,6 +326,8 @@ Closes #issue-number
 
 **Types**: `feat`, `fix`, `refactor`, `docs`, `style`, `test`, `chore`
 
+**Important**: Do NOT include AI co-authorship attribution (e.g., "Generated with Claude Code" or "Co-Authored-By: Claude") in commit messages. All commits should appear as standard developer contributions without AI attribution.
+
 ## Common Patterns
 
 ### Responsive Design

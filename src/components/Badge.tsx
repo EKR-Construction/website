@@ -12,7 +12,7 @@ interface BadgeProps {
 
 const variantStyles: Record<BadgeVariant, string> = {
   hero: 'border-2 border-tomato-jam-500 bg-transparent text-tomato-jam-500',
-  section: 'border-none bg-eggshell-100 text-cornflower-blue-500',
+  section: 'border-1 bg-eggshell-100 text-cornflower-blue-500',
 };
 
 export default function Badge({ children, variant = 'section' }: BadgeProps) {

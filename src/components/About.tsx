@@ -1,4 +1,8 @@
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGraduationCap,
+  faPersonDress,
+  faShield,
+} from '@fortawesome/free-solid-svg-icons';
 import Icon from './Icon';
 import TeamCard from './TeamCard';
 import Badge from './Badge';
@@ -34,17 +38,20 @@ export default function About() {
 
             <div className="mt-6 space-y-4 text-base text-carbon-black-500 sm:text-lg">
               <p>
-                EKR Welding & Fabrication was founded on bring military
-                discipline and commitment to every weld and fabrication. As a
-                certified union shop, we combine the highest standards of
-                craftsmanship with unwavering attention to detail.
+                EKR Construction is a woman-owned, veteran-operated business
+                founded on bringing military discipline, integrity, and
+                accountability to every weld and fabrication. As a certified
+                union shop, we uphold the highest standards of craftsmanship
+                with unwavering attention to detail.
               </p>
               <p>
-                With no large fabrication shop and a lean team, we&apos;re
-                perfectly positioned to handle both small repairs and major
-                installations. Our family-run business prioritizes quality over
-                quantity. We stay lean so priorities always stay set on quality
-                of work.
+                By operating without a large fabrication shop and maintaining a
+                lean, experienced team, we keep overhead low and pass those
+                savings directly to our clients—without sacrificing capability.
+                From small repairs to full custom fabrication and major
+                installations, our family-run business prioritizes quality over
+                volume, ensuring every job receives focused, professional
+                attention.
               </p>
             </div>
 
@@ -52,7 +59,7 @@ export default function About() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-6">
               <div className="flex items-center gap-2">
                 <Icon
-                  icon={faCircleCheck}
+                  icon={faGraduationCap}
                   className="text-lg text-cornflower-blue-500"
                   ariaLabel="Certified"
                 />
@@ -62,24 +69,34 @@ export default function About() {
               </div>
               <div className="flex items-center gap-2">
                 <Icon
-                  icon={faCircleCheck}
+                  icon={faPersonDress}
                   className="text-lg text-cornflower-blue-500"
                   ariaLabel="Advantage"
                 />
                 <span className="text-sm font-semibold text-carbon-black-500">
-                  Small And Nimble
+                  Woman Owned
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Icon
+                  icon={faShield}
+                  className="text-lg text-cornflower-blue-500"
+                  ariaLabel="Advantage"
+                />
+                <span className="text-sm font-semibold text-carbon-black-500">
+                  Veteran Operated
                 </span>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Featured Team Member */}
+          {/* Right Column: About the mission */}
           <div className="flex items-center justify-center">
             <TeamCard
-              name="Eddie Kilar"
-              description="'Strike Hold' - our motto reflecting commitment to precision. Union-trained journeyman in stainless TIG welding with certifications in process piping and structural welding. Every weld executed with military discipline."
+              name="STRIKE HOLD"
+              description="Strike Hold defines how we work. We execute clean cuts, precise welds, and disciplined fabrication. Then we hold the standard, delivering work that withstands pressure, load, and time. No shortcuts. No weak joints. Just work that lasts."
               imageSrc="/images/about-welder.jpg"
-              imageAlt="Eddie Kilar welding with blue arc"
+              imageAlt="Mike Miller welding and fabricating"
             />
           </div>
         </div>

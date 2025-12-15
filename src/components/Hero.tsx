@@ -42,15 +42,15 @@ export default function Hero() {
             id="hero-heading"
             className="text-4xl font-bold uppercase leading-tight text-eggshell-500 sm:text-5xl lg:text-6xl"
           >
-            Precision Welding
+            Custom Welding
             <br />& Fabrication
           </h2>
 
           {/* Subtitle */}
           <p className="mx-auto mt-6 max-w-3xl text-base text-eggshell-500 sm:text-lg lg:text-xl">
-            Union-trained expertise meets military discipline. Specializing in
-            stainless steel, process piping, and mobile welding services for
-            projects of all sizes.
+            Union-trained field honed expertise meets military discipline.
+            Specializing in stainless steel, process piping, and mobile welding
+            services for projects of all sizes.
           </p>
 
           {/* CTA Buttons */}

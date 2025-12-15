@@ -17,7 +17,7 @@ export default function TeamCard({
   imageAlt,
 }: TeamCardProps) {
   return (
-    <div className="overflow-hidden rounded-lg bg-carbon-black-700 shadow-lg">
+    <div className="overflow-hidden rounded-lg bg-carbon-black-500 shadow-lg">
       <div className="aspect-[4/3] w-full overflow-hidden">
         <img
           src={imageSrc}
@@ -26,10 +26,10 @@ export default function TeamCard({
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold uppercase tracking-wide text-eggshell-500">
+        <h3 className="text-xl font-bold uppercase tracking-wide text-cornflower-blue-400">
           {name}
         </h3>
-        <p className="mt-2 text-sm text-eggshell-400">{description}</p>
+        <p className="mt-2 text-sm text-eggshell-500">{description}</p>
       </div>
     </div>
   );

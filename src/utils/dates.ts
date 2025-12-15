@@ -15,6 +15,11 @@ export function getYearsOfExperience(startDate: Date): number {
   return Math.floor(diffYears);
 }
 
+/** Just returns the founded year */
+export function getStartYear(startDate: Date): number {
+  return startDate.getFullYear();
+}
+
 /**
  * Calculate years in business since company establishment
  * @param establishedDate - The date the company was established

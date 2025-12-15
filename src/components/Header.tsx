@@ -16,7 +16,6 @@ export default function Header() {
     { href: '#about', label: 'About' },
     { href: '#services', label: 'Services' },
     { href: '#our-team', label: 'Our Team' },
-    { href: '#history', label: 'History' },
   ];
 
   return (
@@ -56,7 +55,7 @@ export default function Header() {
             ))}
             <li>
               <Button href="#contact" variant="accent" ariaLabel="Get a quote">
-                Get Quote
+                Contact EKR
               </Button>
             </li>
           </ul>
@@ -96,9 +95,9 @@ export default function Header() {
                 href="#contact"
                 variant="accent"
                 className="w-full text-center"
-                ariaLabel="Get a quote"
+                ariaLabel="Contact EKR"
               >
-                Get Quote
+                Contact EKR
               </Button>
             </li>
           </ul>

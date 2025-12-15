@@ -7,6 +7,7 @@ import {
   getYearsInBusiness,
   formatOrdinal,
   COMPANY_DATES,
+  getStartYear,
 } from '@/utils/dates';
 
 /**
@@ -16,6 +17,7 @@ import {
 export default function Hero() {
   const yearsExperience = getYearsOfExperience(COMPANY_DATES.EXPERIENCE_START);
   const yearsInBusiness = getYearsInBusiness(COMPANY_DATES.ESTABLISHED);
+  const yearEstablished = getStartYear(COMPANY_DATES.ESTABLISHED);
 
   return (
     <section
@@ -24,7 +26,7 @@ export default function Hero() {
       aria-labelledby="hero-heading"
     >
       {/* Dark overlay for better text contrast */}
-      <div className="absolute inset-0 bg-carbon-black-900 opacity-75"></div>
+      <div className="absolute inset-0 bg-carbon-black-900 opacity-80"></div>
 
       {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -32,7 +34,7 @@ export default function Hero() {
           {/* Established Badge */}
           <div className="mb-6 inline-block rounded-full border-2 border-tomato-jam-500 px-4 py-2">
             <span className="text-xs font-bold uppercase tracking-wider text-tomato-jam-500 sm:text-sm">
-              Established 2022
+              Established {yearEstablished}
             </span>
           </div>
 
@@ -63,7 +65,7 @@ export default function Hero() {
             </Button>
             <Button
               href="#services"
-              variant="secondary"
+              variant="primary"
               ariaLabel="View our welding and fabrication services"
             >
               Our Services

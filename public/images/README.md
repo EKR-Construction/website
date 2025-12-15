@@ -13,14 +13,14 @@ Upload your hero background image to this directory with the filename `hero-back
 
 ## Team Member Images
 
-**File Pattern**: `team-{name}.jpg`
-**Usage**: Team member profile cards
+**File Pattern**: `about-welder.jpg` or `team-{name}.jpg`
+**Usage**: Team member profile cards and about section
 **Recommended Size**: 800x600px (4:3 aspect ratio)
 **Format**: JPEG (optimized for web)
 
 ### Current Team Members
 
-- `team-eddie.jpg` - Eddie Kilar's profile image
-  - Upload Eddie's welding photo here
-  - Should show welding work or professional headshot
-  - Recommended: Action shot of welding with blue arc visible
+- `about-welder.jpg` - Eddie Kilar's welding photo
+  - Featured in About section
+  - Action shot of welding with blue arc visible
+  - Currently uploaded (1.5MB)

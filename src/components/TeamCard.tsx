@@ -26,7 +26,7 @@ export default function TeamCard({
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold uppercase tracking-wide text-cornflower-blue-400">
+        <h3 className="text-2xl font-bold uppercase tracking-wide text-cornflower-blue-400">
           {name}
         </h3>
         <p className="mt-2 text-sm text-eggshell-500">{description}</p>

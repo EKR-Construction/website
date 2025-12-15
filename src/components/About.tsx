@@ -1,17 +1,26 @@
 import {
   faGraduationCap,
   faPersonDress,
-  faShield,
+  faShieldHalved,
 } from '@fortawesome/free-solid-svg-icons';
 import Icon from './Icon';
 import TeamCard from './TeamCard';
 import Badge from './Badge';
+import TwoColumnCallout from './TwoColumnCallout';
+import {
+  getYearsMarried,
+  getYearsInBusiness,
+  formatOrdinal,
+  COMPANY_DATES,
+} from '@/utils/dates';
 
 /**
  * About section component showcasing company story and team
  * Two-column layout: company information on left, featured team member on right
  */
 export default function About() {
+  const marriedDate = getYearsMarried(COMPANY_DATES.MARRIED);
+  const yearsInBusiness = getYearsInBusiness(COMPANY_DATES.ESTABLISHED);
   return (
     <section
       id="about"
@@ -79,7 +88,7 @@ export default function About() {
               </div>
               <div className="flex items-center gap-2">
                 <Icon
-                  icon={faShield}
+                  icon={faShieldHalved}
                   className="text-lg text-cornflower-blue-500"
                   ariaLabel="Advantage"
                 />
@@ -100,6 +109,25 @@ export default function About() {
             />
           </div>
         </div>
+
+        {/* The Millers Section */}
+        <TwoColumnCallout
+          imageSrc="/images/millers.jpg"
+          imageAlt="Mike and Emily Miller"
+          className="mt-8"
+        >
+          <h3 className="text-2xl text-eggshell-400">LINESVILLE RESIDENTS</h3>
+          <p className="mt-6 text-base text-eggshell-500 sm:text-lg">
+            Married for {marriedDate} years, Mike and Emily Miller are proud
+            lifelong Linesville residents dedicated to serving their local
+            community. In their {formatOrdinal(yearsInBusiness)} year of
+            business, EKR Construction continues to grow while staying true to
+            the personal service and high-quality craftsmanship their customers
+            expect. EKR proudly supports charitable efforts throughout Western
+            Pennsylvania, including XXX, YYY, and ZZZ, reinforcing their
+            commitment to giving back where they live and work.
+          </p>
+        </TwoColumnCallout>
       </div>
     </section>
   );

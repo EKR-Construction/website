@@ -27,16 +27,6 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="team" className="mt-20" aria-labelledby="team-heading">
-          <h3
-            id="team-heading"
-            className="text-3xl font-bold text-carbon-black-500"
-          >
-            The EKR team
-          </h3>
-          <p className="mt-4 text-carbon-black-400">Team team team</p>
-        </section>
-
         <section
           id="contact"
           className="mt-20"

@@ -20,7 +20,12 @@ Upload your hero background image to this directory with the filename `hero-back
 
 ### Current Team Members
 
-- `about-welder.jpg` - Eddie Kilar's welding photo
-  - Featured in About section
+- `about-welder.jpg` - Mike Miller's welding photo
+  - Featured in About section "Strike Hold" card
   - Action shot of welding with blue arc visible
   - Currently uploaded (1.5MB)
+
+- `millers.jpg` - Mike and Emily Miller photo
+  - Featured in About section "Linesville Residents"
+  - Professional photo of Mike and Emily
+  - Currently uploaded (1.1MB)

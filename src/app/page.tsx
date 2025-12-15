@@ -1,25 +1,16 @@
 import Hero from '@/components/Hero';
+import About from '@/components/About';
 
 export default function Home() {
   return (
     <main id="main-content">
       <Hero />
 
+      <About />
+
       {/* Placeholder sections with proper heading hierarchy */}
 
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <section id="about" className="mt-20" aria-labelledby="about-heading">
-          <h3
-            id="about-heading"
-            className="text-3xl font-bold text-carbon-black-500"
-          >
-            About Us
-          </h3>
-          <p className="mt-4 text-carbon-black-400">
-            Learn more about our company and team.
-          </p>
-        </section>
-
         <section
           id="services"
           className="mt-20"
@@ -34,16 +25,6 @@ export default function Home() {
           <p className="mt-4 text-carbon-black-400">
             Comprehensive construction services coming soon.
           </p>
-        </section>
-
-        <section id="team" className="mt-20" aria-labelledby="team-heading">
-          <h3
-            id="team-heading"
-            className="text-3xl font-bold text-carbon-black-500"
-          >
-            The EKR team
-          </h3>
-          <p className="mt-4 text-carbon-black-400">Team team team</p>
         </section>
 
         <section

@@ -33,6 +33,18 @@ export function getYearsInBusiness(establishedDate: Date): number {
 }
 
 /**
+ * Calculate years in married
+ * @param marriedDate - The date Mike an Em tied the knot
+ * @returns Number of full years married
+ */
+export function getYearsMarried(marriedDate: Date): number {
+  const now = new Date();
+  const diffTime = Math.abs(now.getTime() - marriedDate.getTime());
+  const diffYears = diffTime / (1000 * 60 * 60 * 24 * 365.25);
+  return Math.floor(diffYears);
+}
+
+/**
  * Get ordinal suffix for a number (1st, 2nd, 3rd, 4th, etc.)
  * @param num - The number to get the ordinal suffix for
  * @returns The ordinal suffix (st, nd, rd, or th)
@@ -69,4 +81,5 @@ export const COMPANY_DATES = {
   // TODO: Verify this date with Mike
   EXPERIENCE_START: new Date('2017-06-01'),
   ESTABLISHED: new Date('2022-03-01'),
+  MARRIED: new Date('2007-10-01'),
 } as const;

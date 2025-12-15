@@ -1,6 +1,7 @@
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import Icon from './Icon';
 import TeamCard from './TeamCard';
+import Badge from './Badge';
 
 /**
  * About section component showcasing company story and team
@@ -18,10 +19,8 @@ export default function About() {
           {/* Left Column: Company Story */}
           <div className="flex flex-col justify-center">
             {/* About Badge */}
-            <div className="mb-4 inline-block self-start rounded-full bg-cornflower-blue-500 px-4 py-1">
-              <span className="text-xs font-bold uppercase tracking-wider text-eggshell-500">
-                About EKR
-              </span>
+            <div className="mb-4 self-start">
+              <Badge variant="section">About EKR</Badge>
             </div>
 
             <h2

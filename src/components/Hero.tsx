@@ -2,6 +2,7 @@
 
 import Button from './Button';
 import StatCard from './StatCard';
+import Badge from './Badge';
 import {
   getYearsOfExperience,
   getYearsInBusiness,
@@ -32,10 +33,8 @@ export default function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
           {/* Established Badge */}
-          <div className="mb-6 inline-block rounded-full border-2 border-tomato-jam-500 px-4 py-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-tomato-jam-500 sm:text-sm">
-              Established {yearEstablished}
-            </span>
+          <div className="mb-6">
+            <Badge variant="hero">Established {yearEstablished}</Badge>
           </div>
 
           {/* Main Heading */}

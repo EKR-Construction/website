@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex min-h-[600px] items-center bg-carbon-black-500 bg-cover bg-center sm:min-h-[700px]"
+      className="relative hidden min-h-[600px] items-center bg-carbon-black-500 bg-cover bg-center sm:min-h-[700px] md:flex"
       style={{ backgroundImage: "url('/images/hero-background.png')" }}
       aria-labelledby="hero-heading"
     >

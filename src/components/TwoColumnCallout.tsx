@@ -35,11 +35,11 @@ export default function TwoColumnCallout({
         <div className="flex flex-col">{children}</div>
 
         {/* Right Column: Image */}
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-center lg:justify-end">
           <img
             src={imageSrc}
             alt={imageAlt}
-            className="h-[300px] w-auto rounded-lg"
+            className="h-[200px] w-auto rounded-lg sm:h-[250px] lg:h-[300px]"
           />
         </div>
       </div>

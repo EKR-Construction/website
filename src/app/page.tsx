@@ -6,8 +6,6 @@ export default function Home() {
     <main id="main-content">
       <Hero />
 
-      <About />
-
       {/* Placeholder sections with proper heading hierarchy */}
 
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -26,7 +24,11 @@ export default function Home() {
             Comprehensive construction services coming soon.
           </p>
         </section>
+      </div>
 
+      <About />
+
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <section
           id="contact"
           className="mt-20"

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -83,9 +85,11 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-dusty-grape-400 pt-8 text-center">
-          <img
+          <Image
             src="/images/EKR_eggshell.png"
             alt="EKR Construction"
+            width={102}
+            height={64}
             className="mx-auto mb-4 h-16"
           />
           <p className="text-sm text-eggshell-100">

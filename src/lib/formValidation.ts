@@ -88,5 +88,5 @@ export const announceToScreenReader = (message: string): void => {
   announcement.className = 'sr-only';
   announcement.textContent = message;
   document.body.appendChild(announcement);
-  setTimeout(() => document.body.removeChild(announcement), 1000);
+  setTimeout(() => announcement.remove(), 1000);
 };

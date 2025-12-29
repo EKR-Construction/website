@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     // Modern image formats for better compression
     formats: ['image/webp', 'image/avif'],
+    // Quality levels used by Image components (75 = default, 85 = hero background)
+    qualities: [75, 85],
   },
 };
 

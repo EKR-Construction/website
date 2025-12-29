@@ -28,7 +28,7 @@ export default function About() {
       aria-labelledby="about-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 lg:grid-cols-2 lg:gap-16">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 lg:gap-16">
           {/* Left Column: Company Story */}
           <div className="flex flex-col justify-center">
             {/* About Badge */}

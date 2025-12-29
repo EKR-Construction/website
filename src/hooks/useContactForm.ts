@@ -69,7 +69,7 @@ export function useContactForm(): UseContactFormReturn {
   };
 
   // Validate all fields
-  const validateForm = (): boolean => {
+  const validateForm = (): { isValid: boolean; errors: ContactFormErrors } => {
     const newErrors: ContactFormErrors = {};
     let isValid = true;
 
@@ -85,7 +85,7 @@ export function useContactForm(): UseContactFormReturn {
     });
 
     setErrors(newErrors);
-    return isValid;
+    return { isValid, errors: newErrors };
   };
 
   // Handle form submission
@@ -104,9 +104,10 @@ export function useContactForm(): UseContactFormReturn {
       return;
     }
 
-    if (!validateForm()) {
+    const validation = validateForm();
+    if (!validation.isValid) {
       // Announce validation errors to screen readers
-      const errorCount = Object.keys(errors).length;
+      const errorCount = Object.keys(validation.errors).length;
       const announcement = `Form has ${errorCount} error${errorCount !== 1 ? 's' : ''}. Please correct the errors and try again.`;
       announceToScreenReader(announcement);
       return;

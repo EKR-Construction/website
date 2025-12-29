@@ -13,7 +13,8 @@ export const MAX_LENGTHS = {
 
 // Validation regex patterns
 export const VALIDATION_PATTERNS = {
-  email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+  // Simple email validation - browser's type="email" does heavy lifting
+  email: /^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
   phone: /^[\d\s\-\(\)]+$/,
 } as const;
 

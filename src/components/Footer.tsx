@@ -83,6 +83,11 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-dusty-grape-400 pt-8 text-center">
+          <img
+            src="/images/EKR_eggshell.png"
+            alt="EKR Construction"
+            className="mx-auto mb-4 h-16"
+          />
           <p className="text-sm text-eggshell-100">
             &copy; {currentYear} EKR Construction. All rights reserved.
           </p>

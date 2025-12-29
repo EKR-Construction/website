@@ -115,6 +115,9 @@ export async function POST(request: NextRequest) {
     // Prepare column values for Monday.com
     // Company status column - set to "EKR"
     // Name, Telephone, Email, Message - text columns
+    // NOTE: The keys below (e.g. color_mkz1c23c, text_mkz1frgh, etc.) are
+    // Monday.com board-specific column IDs. They must be configured to match
+    // the column IDs of the target Monday.com board's schema.
     const columnValues = JSON.stringify({
       color_mkz1c23c: { label: 'EKR' }, // Company: EKR (using label text)
       text_mkz1frgh: fullName, // Name

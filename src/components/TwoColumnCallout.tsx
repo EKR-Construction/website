@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Image from 'next/image';
 
 /**
  * TwoColumnCallout component for displaying content with an image
@@ -36,9 +37,11 @@ export default function TwoColumnCallout({
 
         {/* Right Column: Image */}
         <div className="flex items-center justify-center lg:justify-end">
-          <img
+          <Image
             src={imageSrc}
             alt={imageAlt}
+            width={300}
+            height={300}
             className="h-[200px] w-auto rounded-lg sm:h-[250px] lg:h-[300px]"
           />
         </div>

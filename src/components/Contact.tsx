@@ -66,7 +66,7 @@ export default function Contact() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 maxLength={MAX_LENGTHS.email}
-                placeholder="john@example.com"
+                placeholder="mike@ekr.construction"
               />
 
               <FormInput
@@ -79,7 +79,7 @@ export default function Contact() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 maxLength={MAX_LENGTHS.phone}
-                placeholder="(555) 123-4567"
+                placeholder="(814) 720-9860"
               />
 
               <FormTextarea

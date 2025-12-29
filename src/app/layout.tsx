@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'EKR Construction' }],
   creator: 'EKR Construction',
   publisher: 'EKR Construction',
+  icons: {
+    icon: '/favicon.svg',
+  },
   formatDetection: {
     email: false,
     address: false,

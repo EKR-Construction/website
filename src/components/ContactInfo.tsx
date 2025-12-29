@@ -41,10 +41,10 @@ export default function ContactInfo() {
           <div>
             <div className="text-sm text-carbon-black-400">Call Us</div>
             <a
-              href="tel:+15551234567"
+              href="tel:+18147209860"
               className="text-lg font-semibold text-carbon-black-500 hover:text-cornflower-blue-500 focus:outline-none focus:ring-2 focus:ring-cornflower-blue-500 focus:ring-offset-2"
             >
-              (555) 123-4567
+              (814) 720-9860
             </a>
           </div>
         </div>

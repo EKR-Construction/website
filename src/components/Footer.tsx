@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -60,13 +62,36 @@ export default function Footer() {
               Contact
             </h2>
             <address className="not-italic text-sm text-eggshell-100">
-              <p>Email: info@ekrconstruction.com</p>
-              <p>Phone: (555) 123-4567</p>
+              <p>
+                Email:{' '}
+                <a
+                  href="mailto:mike@ekr.construction"
+                  className="hover:underline focus:outline-none focus:ring-2 focus:ring-cornflower-blue-500 focus:ring-offset-2 focus:ring-offset-carbon-black-500"
+                >
+                  mike@ekr.construction
+                </a>
+              </p>
+              <p>
+                Phone:{' '}
+                <a
+                  href="tel:+18147209860"
+                  className="hover:underline focus:outline-none focus:ring-2 focus:ring-cornflower-blue-500 focus:ring-offset-2 focus:ring-offset-carbon-black-500"
+                >
+                  (814) 720-9860
+                </a>
+              </p>
             </address>
           </div>
         </div>
 
         <div className="mt-8 border-t border-dusty-grape-400 pt-8 text-center">
+          <Image
+            src="/images/EKR_eggshell.png"
+            alt="EKR Construction"
+            width={102}
+            height={64}
+            className="mx-auto mb-4 h-16"
+          />
           <p className="text-sm text-eggshell-100">
             &copy; {currentYear} EKR Construction. All rights reserved.
           </p>

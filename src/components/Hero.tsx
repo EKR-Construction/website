@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+import Image from 'next/image';
 import Button from './Button';
 import StatCard from './StatCard';
 import Badge from './Badge';
@@ -16,21 +18,38 @@ import {
  * Displays main heading, subtitle, CTA buttons, and company metrics
  */
 export default function Hero() {
-  const yearsExperience = getYearsOfExperience(COMPANY_DATES.EXPERIENCE_START);
-  const yearsInBusiness = getYearsInBusiness(COMPANY_DATES.ESTABLISHED);
-  const yearEstablished = getStartYear(COMPANY_DATES.ESTABLISHED);
+  // Use lazy initialization to prevent hydration mismatches
+  const [yearsExperience] = useState(() =>
+    getYearsOfExperience(COMPANY_DATES.EXPERIENCE_START)
+  );
+  const [yearsInBusiness] = useState(() =>
+    getYearsInBusiness(COMPANY_DATES.ESTABLISHED)
+  );
+  const [yearEstablished] = useState(() =>
+    getStartYear(COMPANY_DATES.ESTABLISHED)
+  );
 
   return (
     <section
-      className="relative hidden min-h-[600px] items-center bg-carbon-black-500 bg-cover bg-center sm:min-h-[700px] md:flex"
-      style={{ backgroundImage: "url('/images/hero-background.png')" }}
+      className="relative hidden min-h-[600px] items-center bg-carbon-black-500 sm:min-h-[700px] md:flex"
       aria-labelledby="hero-heading"
     >
+      {/* Background Image */}
+      <Image
+        src="/images/hero-background.png"
+        alt=""
+        fill
+        priority
+        className="object-cover"
+        sizes="100vw"
+        quality={85}
+      />
+
       {/* Dark overlay for better text contrast */}
-      <div className="absolute inset-0 bg-carbon-black-900 opacity-80"></div>
+      <div className="absolute inset-0 z-10 bg-carbon-black-900 opacity-80"></div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="relative z-20 mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
           {/* Established Badge */}
           <div className="mb-6">

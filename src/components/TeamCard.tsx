@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 /**
  * TeamCard component for displaying team member information
  * Reusable component with image, name, and description
@@ -18,11 +20,13 @@ export default function TeamCard({
 }: TeamCardProps) {
   return (
     <div className="overflow-hidden rounded-lg bg-carbon-black-500 shadow-lg">
-      <div className="aspect-[4/3] w-full overflow-hidden">
-        <img
+      <div className="relative aspect-[4/3] w-full overflow-hidden">
+        <Image
           src={imageSrc}
           alt={imageAlt}
-          className="h-full w-full object-cover"
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
       </div>
       <div className="p-6">

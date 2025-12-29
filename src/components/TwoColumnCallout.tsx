@@ -37,13 +37,14 @@ export default function TwoColumnCallout({
 
         {/* Right Column: Image */}
         <div className="flex items-center justify-center lg:justify-end">
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            width={300}
-            height={300}
-            className="h-[200px] w-auto rounded-lg sm:h-[250px] lg:h-[300px]"
-          />
+          <div className="relative h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[300px] lg:w-[300px]">
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              fill
+              className="rounded-lg object-contain"
+            />
+          </div>
         </div>
       </div>
     </div>

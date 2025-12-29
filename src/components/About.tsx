@@ -123,9 +123,7 @@ export default function About() {
             community. In their {formatOrdinal(yearsInBusiness)} year of
             business, EKR Construction continues to grow while staying true to
             the personal service and high-quality craftsmanship their customers
-            expect. EKR proudly supports charitable efforts throughout Western
-            Pennsylvania, including XXX, YYY, and ZZZ, reinforcing their
-            commitment to giving back where they live and work.
+            expect.
           </p>
         </TwoColumnCallout>
       </div>

@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import Button from './Button';
 import StatCard from './StatCard';
@@ -17,9 +18,16 @@ import {
  * Displays main heading, subtitle, CTA buttons, and company metrics
  */
 export default function Hero() {
-  const yearsExperience = getYearsOfExperience(COMPANY_DATES.EXPERIENCE_START);
-  const yearsInBusiness = getYearsInBusiness(COMPANY_DATES.ESTABLISHED);
-  const yearEstablished = getStartYear(COMPANY_DATES.ESTABLISHED);
+  // Use lazy initialization to prevent hydration mismatches
+  const [yearsExperience] = useState(() =>
+    getYearsOfExperience(COMPANY_DATES.EXPERIENCE_START)
+  );
+  const [yearsInBusiness] = useState(() =>
+    getYearsInBusiness(COMPANY_DATES.ESTABLISHED)
+  );
+  const [yearEstablished] = useState(() =>
+    getStartYear(COMPANY_DATES.ESTABLISHED)
+  );
 
   return (
     <section

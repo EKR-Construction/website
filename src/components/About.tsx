@@ -28,7 +28,7 @@ export default function About() {
       aria-labelledby="about-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 lg:grid-cols-2 lg:gap-16">
           {/* Left Column: Company Story */}
           <div className="flex flex-col justify-center">
             {/* About Badge */}
@@ -101,12 +101,14 @@ export default function About() {
 
           {/* Right Column: About the mission */}
           <div className="flex items-center justify-center">
-            <TeamCard
-              name="STRIKE HOLD"
-              description="Strike Hold defines how we work. We execute clean cuts, precise welds, and disciplined fabrication. Then we hold the standard, delivering work that withstands pressure, load, and time. No shortcuts. No weak joints. Just work that lasts."
-              imageSrc="/images/about-welder.jpg"
-              imageAlt="Mike Miller welding and fabricating"
-            />
+            <div className="w-full max-w-md lg:max-w-none">
+              <TeamCard
+                name="STRIKE HOLD"
+                description="Strike Hold defines how we work. We execute clean cuts, precise welds, and disciplined fabrication. Then we hold the standard, delivering work that withstands pressure, load, and time. No shortcuts. No weak joints. Just work that lasts."
+                imageSrc="/images/about-welder.jpg"
+                imageAlt="Mike Miller welding and fabricating"
+              />
+            </div>
           </div>
         </div>
 

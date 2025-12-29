@@ -60,6 +60,10 @@ export const validateField = (
       if (!value.trim()) return 'Phone number is required';
       if (!VALIDATION_PATTERNS.phone.test(value))
         return 'Please enter a valid phone number';
+      // Count actual digits (remove all non-digit characters)
+      const digitCount = value.replace(/\D/g, '').length;
+      if (digitCount < 10)
+        return 'Phone number must contain at least 10 digits';
       if (value.length > MAX_LENGTHS.phone)
         return `Phone number must be less than ${MAX_LENGTHS.phone} characters`;
       return '';

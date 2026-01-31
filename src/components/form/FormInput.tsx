@@ -13,6 +13,7 @@ interface FormInputProps {
   placeholder?: string;
   maxLength?: number;
   required?: boolean;
+  autoComplete?: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
 }
@@ -27,6 +28,7 @@ export default function FormInput({
   placeholder,
   maxLength,
   required = true,
+  autoComplete,
   onChange,
   onBlur,
 }: FormInputProps) {
@@ -52,6 +54,7 @@ export default function FormInput({
             : 'border-carbon-black-200 focus:border-cornflower-blue-500 focus:ring-cornflower-blue-500'
         }`}
         placeholder={placeholder}
+        autoComplete={autoComplete}
         aria-invalid={!!error}
         aria-describedby={error ? `${id}-error` : undefined}
         required={required}

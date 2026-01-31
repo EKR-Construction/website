@@ -54,6 +54,7 @@ export default function Contact() {
                 onBlur={handleBlur}
                 maxLength={MAX_LENGTHS.fullName}
                 placeholder="John Doe"
+                autoComplete="name"
               />
 
               <FormInput
@@ -67,6 +68,7 @@ export default function Contact() {
                 onBlur={handleBlur}
                 maxLength={MAX_LENGTHS.email}
                 placeholder="mike@ekr.construction"
+                autoComplete="email"
               />
 
               <FormInput
@@ -80,6 +82,7 @@ export default function Contact() {
                 onBlur={handleBlur}
                 maxLength={MAX_LENGTHS.phone}
                 placeholder="(814) 720-9860"
+                autoComplete="tel"
               />
 
               <FormTextarea

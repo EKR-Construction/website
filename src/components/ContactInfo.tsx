@@ -73,9 +73,12 @@ export default function ContactInfo() {
             aria-hidden="true"
           />
           <div>
-            <div className="text-sm text-carbon-black-400">Location</div>
+            <div className="text-sm text-carbon-black-400">Service Area</div>
             <div className="text-lg font-semibold text-carbon-black-500">
-              Linesville, PA
+              Northwestern PA
+            </div>
+            <div className="text-sm text-carbon-black-400">
+              Erie to I-80 · 24/7 Emergency
             </div>
           </div>
         </div>

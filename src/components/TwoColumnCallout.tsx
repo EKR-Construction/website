@@ -43,6 +43,7 @@ export default function TwoColumnCallout({
               alt={imageAlt}
               fill
               className="rounded-lg object-contain"
+              sizes="(max-width: 640px) 200px, (max-width: 1024px) 250px, 300px"
             />
           </div>
         </div>

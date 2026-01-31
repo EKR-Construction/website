@@ -36,8 +36,8 @@ export default function Hero() {
     >
       {/* Background Image */}
       <Image
-        src="/images/hero-background.png"
-        alt=""
+        src="/images/hero-background.jpg"
+        alt="Welding sparks illuminating industrial fabrication work"
         fill
         priority
         className="object-cover"

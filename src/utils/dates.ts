@@ -4,7 +4,6 @@
 
 /**
  * Calculate years of experience since a given start date
- * TODO: Verify June 2017 date with Mike
  * @param startDate - The start date for experience calculation
  * @returns Number of years of experience (rounded down)
  */
@@ -78,8 +77,7 @@ export function formatOrdinal(num: number): string {
  * Company milestone dates
  */
 export const COMPANY_DATES = {
-  // TODO: Verify this date with Mike
-  EXPERIENCE_START: new Date('2017-06-01'),
-  ESTABLISHED: new Date('2022-03-01'),
-  MARRIED: new Date('2007-10-01'),
+  EXPERIENCE_START: new Date('2013-09-01'),
+  ESTABLISHED: new Date('2022-01-27'),
+  MARRIED: new Date('2007-10-14'),
 } as const;

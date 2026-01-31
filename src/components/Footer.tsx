@@ -16,8 +16,8 @@ export default function Footer() {
               EKR Construction
             </h2>
             <p className="text-sm text-eggshell-100">
-              Professional construction services for residential and commercial
-              projects.
+              Woman-owned, veteran-operated welding and fabrication in
+              Linesville, PA. Union-certified craftsmanship for every project.
             </p>
           </div>
 
